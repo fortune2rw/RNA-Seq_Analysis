@@ -178,8 +178,12 @@ ggplot(cor_long,
        aes(x = X1 , y = X2, fill = value))+
   geom_tile()+
   scale_fill_gradient2(low = "blue", mid = "white", high = "red", midpoint = 0)+
-  labs( title = "Heatmap showing sample correlation")+
-  theme_minimal()
+  labs(title = "Heatmap showing sample correlation",
+       x = NULL, y = NULL, fill = "Correlation")+
+  theme_minimal()+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        title = element_text(size = 12,face = "bold"),
+        legend.title = element_text(size = 10))
 
 #plot
 corrplot(cor_matrix, addCoefasPercent = TRUE, addCoef.col = "white", tl.srt = 25)
