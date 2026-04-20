@@ -178,7 +178,7 @@ ggplot(cor_long,
        aes(x = X1 , y = X2, fill = value))+
   geom_tile()+
   scale_fill_gradient2(low = "blue", mid = "white", high = "red", midpoint = 0)+
-  labs( title = "Correlation PLot shoing correlation coefficeinct as percentage (%)")+
+  labs( title = "Heatmap showing sample correlation")+
   theme_minimal()
 
 #plot
