@@ -73,6 +73,7 @@ Before comparing gene expression across samples, several technical biases were c
 ## Packages  
 ``` r
 install.packages(c(
-  "TCGAbiolinks", "org.Hs.eg.db", "pheatmap", "reshape", "ggplot2", "org.Hs.eg.db", "dplyr"
+  "BiocManager", "ggfortify", "pheatmap", "reshape", "ggplot2", "corrplot", "dplyr",
+"stats", "janitor"
 ))
 
