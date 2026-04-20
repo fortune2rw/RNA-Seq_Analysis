@@ -45,11 +45,34 @@ Before comparing gene expression across samples, several technical biases were c
 
 ### Normalization approches
 1. To address the library size bias(sequencing depth), read counts per gene should be divided by each gene count by a certain value and multiplied by 10^6. These values are referedd to as CPM ( count per million).
-```math
-CPM = (counts / total\ reads) \times 10^6
--Other metrics that imoroves CPM are RPKM/FPKM(read/fragment per kilo base of million read) and TPM (transcript per million).
 
-## Exploratory Data Analaysis
-Selected top 50 significant genes
-**rationale : Samples can be represntaed by a couple of principal varibales instead of thousands of genes. This is useful for visualization, clustering and predictive modeling.
+- Other metrics that imoroves CPM are RPKM/FPKM(read/fragment per kilo base of million read) and TPM (transcript per million).
+
+## Data Visualisation
+### Selected top 50 significant genes ###
+**rationale* : Samples can be represntaed by a couple of principal varibales instead of thousands of genes. This is useful for visualization, clustering and predictive modeling.
+
+### Principal Component Analsysi (PCA)
+- PCA analysis highlited  any initital quality control issues that may arise from the sample which may affect potential analsysis results.
+- PCA also highlight any batch effects across cohorts
+
+### Clustering Heatmap
+- Clustering samples by row (gene) using "pheatmap" to find out whcih genes have the same expression level across Control & Cases.
+- Column clustering (samples): Groups samples based on transcriptional similarity
+
+### Correlation Heatmap
+- Compute correlation score between each pair of samples.
+- Visualized sample correlation to identify which samples
+**rationale* : Correlation analysis improves clustering quality.
+
+
+## Future Work:
+- Differential expression analysis using DESeq2.
+- Planned for another repo.
+
+## Packages  
+``` r
+install.packages(c(
+  "TCGAbiolinks", "org.Hs.eg.db", "pheatmap", "reshape", "ggplot2", "org.Hs.eg.db", "dplyr"
+))
 
