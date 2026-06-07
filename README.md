@@ -8,8 +8,6 @@ Exploratory data analysis (EDA) of RNA-seq gene expression data obtained from Th
 - Identify patterns prior to differential expression analysis.
 - measure the similarity of samples in terms of quantified expression level across profiles.
 
-This repo focuses on exploratory data anylsis only, a seprate repo will be used for differential expression analysis.
----
 
 ## Method
 Data was retrieved using the GDC API via the `TCGAbiolinks` package.
@@ -66,10 +64,9 @@ Before comparing gene expression across samples, several technical biases were c
 **rationale* : Correlation analysis improves clustering quality.
 
 
-## Future Work:
-- Differential expression analysis using DESeq2.
-- Planned for another repo.
-
+## Differential Expression Analysis:
+- DESeq2.
+  
 ## Packages  
 ``` r
 install.packages(c(
