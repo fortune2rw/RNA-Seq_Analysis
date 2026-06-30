@@ -1,4 +1,4 @@
-# RNA-Seq_Analysis
+# Bulk RNA-Seq 
 ##  TCGA RNA-seq Exploratory Analysis (Tumour vs Normal)
 
 ## Overview
