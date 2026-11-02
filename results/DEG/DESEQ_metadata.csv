@@ -1,1 +1,12 @@
-
+"","sample_name","condition"
+"1","Case","tumour"
+"2","Case.1","tumour"
+"3","Case.2","tumour"
+"4","Case.3","tumour"
+"5","Case.4","tumour"
+"6","Case.5","tumour"
+"7","Control","normal"
+"8","Control.1","normal"
+"9","Control.2","normal"
+"10","Control.3","normal"
+"11","Control.4","normal"
