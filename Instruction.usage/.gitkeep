@@ -1,0 +1,13 @@
+## First install renv package 
+#install.packages("renv")
+
+#let renv handle package installation 
+#renv::init()
+
+# If renv is already initialized, simply run:
+# renv::install(c(
+ # "janitor", "ggfortify", "corrplot", "ggrepel",
+ # "bioc::TCGAbiolinks", "bioc::AnnotationDbi", "bioc::org.Hs.eg.db",
+ # "bioc::recount3", "bioc::DESeq2", "bioc::clusterProfiler"
+# ))
+
